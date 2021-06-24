@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey_bg">#2A2E37</color>
+    <color name="grey_bg_main">#1E2027</color>
+    <color name="grey_tv">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="accent">#d32f2f</color>
+    <color name="placeholder">#6FB6B6B6</color>
+</resources>

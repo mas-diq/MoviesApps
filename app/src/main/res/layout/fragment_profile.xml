@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg_main"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <!--    img user-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_watermark"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/img_watermark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    tv login-->
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="@string/user_name"
+        android:textColor="@color/grey_tv"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@id/nounique"
+        app:layout_constraintStart_toStartOf="@+id/img_watermark"
+        app:layout_constraintTop_toBottomOf="@+id/fullname" />
+
+    <!--tv id-->
+    <TextView
+        android:id="@+id/nounique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:fontFamily="@font/montserrat_regular"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="2dp"
+        android:text="@string/id"
+        android:textColor="@color/grey_tv"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="@+id/img_watermark"
+        app:layout_constraintStart_toEndOf="@id/username"
+        app:layout_constraintTop_toTopOf="@+id/username" />
+
+    <!--    tv name-->
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/name"
+        android:textColor="@color/grey_tv"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_watermark"
+        app:layout_constraintStart_toStartOf="@+id/img_watermark"
+        app:layout_constraintTop_toBottomOf="@+id/img_watermark" />
+
+    <!--    using data-->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username">
+
+        <!-- ic company-->
+        <ImageView
+            android:id="@+id/company_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/company"
+            app:srcCompat="@drawable/ic_briefcase" />
+
+        <!-- tv Company -->
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/companyValue"
+            android:textColor="@color/grey_tv"
+            android:textSize="18sp" />
+
+        <!-- ic Location -->
+        <ImageView
+            android:id="@+id/location_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:contentDescription="@string/location"
+            app:srcCompat="@drawable/ic_placeholder" />
+
+        <!--tv location-->
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/locationValue"
+            android:textColor="@color/grey_tv"
+            android:textSize="18sp" />
+
+        <!-- ic repository-->
+        <ImageView
+            android:id="@+id/repository_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:contentDescription="@string/repository"
+            app:srcCompat="@drawable/ic_archive" />
+
+        <!--tv repository-->
+        <TextView
+            android:id="@+id/repository"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/repositoryValue"
+            android:textColor="@color/grey_tv"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <!-- Information Box -->
+    <View
+        android:id="@+id/information_box"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <!-- Icon Follower -->
+    <ImageView
+        android:id="@+id/follower_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:contentDescription="@string/follower"
+        android:src="@drawable/ic_add_user"
+        app:layout_constraintBottom_toBottomOf="@id/information_box"
+        app:layout_constraintStart_toStartOf="@id/information_box"
+        app:layout_constraintTop_toTopOf="@id/information_box" />
+
+    <!-- tv Follower -->
+    <TextView
+        android:id="@+id/follower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="@string/follower"
+        android:textColor="@color/grey_tv"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/information_box"
+        app:layout_constraintStart_toEndOf="@+id/follower_img"
+        app:layout_constraintTop_toTopOf="@+id/information_box" />
+
+    <!-- Follower value -->
+    <TextView
+        android:id="@+id/follower_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/followerValue"
+        android:textColor="@color/grey_tv"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/information_box"
+        app:layout_constraintStart_toEndOf="@+id/follower"
+        app:layout_constraintTop_toTopOf="@id/information_box" />
+
+    <!-- Icon Following -->
+    <ImageView
+        android:id="@+id/following_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/following"
+        android:src="@drawable/ic_have_user"
+        app:layout_constraintBottom_toBottomOf="@id/information_box"
+        app:layout_constraintEnd_toStartOf="@+id/following"
+        app:layout_constraintTop_toTopOf="@id/information_box" />
+
+    <!-- tv Following -->
+    <TextView
+        android:id="@+id/following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="@string/following"
+        android:textColor="@color/grey_tv"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/information_box"
+        app:layout_constraintEnd_toStartOf="@+id/following_value"
+        app:layout_constraintTop_toTopOf="@+id/information_box" />
+
+    <!-- Following Number -->
+    <TextView
+        android:id="@+id/following_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/followingValue"
+        android:textColor="@color/grey_tv"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/information_box"
+        app:layout_constraintEnd_toEndOf="@+id/information_box"
+        app:layout_constraintTop_toTopOf="@id/information_box" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

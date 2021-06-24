@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">MovieApps</string>
+    <string name="title_activity_detail_Movie">Detail Movies</string>
+    <string name="title_activity_detail_TvShow">Detail Tv Shows</string>
+
+    <string name="title_movie">Spider-Man: Into the Spider-Verse</string>
+    <string name="duration_movie">Duration : 1h 56min</string>
+
+    <string name="title_tvShow">Stranger Things: Season 2</string>
+    <string name="episode">Episodes : 9 Episodes</string>
+
+    <!--    profile-->
+    <string name="name">M Shiddiq Fathullah</string>
+    <string name="user_name">mas-diq</string>
+    <string name="follower">Followers</string>
+    <string name="followerValue">19</string>
+    <string name="following">Followings</string>
+    <string name="followingValue">21</string>
+    <string name="company">Company</string>
+    <string name="companyValue">Gunadarma</string>
+    <string name="location">Location</string>
+    <string name="locationValue">Indonesia</string>
+    <string name="repositoryValue">14</string>
+    <string name="repository">Repository</string>
+    <string name="id">73525864</string>
+
+    <string name="description_tvshow_value">A love letter to the 80s classics that captivated a generation, Stranger Things is set in 1983 Indiana, where a young boy vanishes into thin air. As friends, family and local police search for answers, they are drawn into an extraordinary mystery involving top-secret government experiments, terrifying supernatural forces and one very strange little girl</string>
+    <string name="description_movies_value">Bitten by a radioactive spider in the subway, Brooklyn teenager Miles Morales suddenly develops mysterious powers that transform him into the one and only Spider-Man. When he meets Peter Parker, he soon realizes that there are many others who share his special, high-flying talents. Miles must now use his newfound skills to battle the evil Kingpin, a hulking madman who can open portals to other universes and pull different versions of Spider-Man into our world.</string>
+    <string name="description_movies">Description Movie :</string>
+    <string name="description_tvshow">Description Tv Show :</string>
+    <string name="example">Example</string>
+    <string name="start">Watch Now!</string>
+
+    <string name="list_movie">List Movies :</string>
+    <string name="list_tvshow">List Tv Show :</string>
+
+    <string name="movie">Movies</string>
+    <string name="profile">Profile</string>
+    <string name="tvshow">Tv Show</string>
+
+    <string name="duration_value">Duration : %s</string>
+    <string name="episode_value">Episodes : %s</string>
+    <string name="share_text">Tonton sekarang %s di elka21.com</string>
+    <string name="favorite">Favorite</string>
+</resources>

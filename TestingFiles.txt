@@ -1,0 +1,183 @@
+Instrumental Test
+// Movie
+- loadMovies()
+-- Memastikan rv_movie dalam keadaan tampil
+-- Gulir rv_movie ke posisi terakhir
+
+- loadDetailMovie()
+-- Memberikan tindakan klik pada data pertama di rv_movies
+-- Memastikan text_title_movie dalam keadaan tampil
+-- Memastikan text_title_movie sesuai dengan data dummyMovie[0].title
+-- Memastikan text_duration_movie dalam keadaan tampil
+-- Memastikan text_duration_movie sesuai dengan format "Duration : ${dummyMovie[0].duration}"
+-- Memastikan btn_start_movie dalam keadaan tampil
+-- Memastikan btn_start_movie sesuai dengan data format "Watch Now!"
+-- Memastikan text_desc dalam keadaan tampil
+-- Memastikan text_desc sesuai dengan data format "Description Movie :"
+-- Memastikan text_description dalam keadaan tampil
+-- Memastikan text_description sesuai dengan data dummyMovie[0].description
+-- Gulir kebagian bawah page
+-- Memastikan text_list_module_movie dalam keadaan tampil
+-- Memastikan text_list_module_movie sesuai dengan data format "List Movies :"
+
+- loadModuleMovie()
+-- Memberikan tindakan klik pada data pertama di rv_movies
+-- Memastikan btn_start_movie dalam keadaan tampil
+-- Memastikan btn_start_movie sesuai dengan data format "Watch Now!"
+-- Memberikan tindakan klik pada data pertama di btn_start_movie
+-- Memastikan list module dalam keadaan tampil
+
+- loadDetailModuleMovie()
+-- Memberikan tindakan klik pada data pertama di rv_movies
+-- Memastikan btn_start_movie dalam keadaan tampil
+-- Memastikan btn_start_movie sesuai dengan data format "Watch Now!"
+-- Memberikan tindakan klik pada data pertama di btn_start_movie
+-- Memberikan tindakan klik pada data pertama di rv_module
+-- Memastikan list module dalam keadaan webview telah tampi
+
+// TV Show
+- loadTvShow()
+-- Pindah ke page tv show
+-- Memastikan rv_tvshow dalam keadaan tampil
+-- Gulir rv_tvshow ke posisi terakhir
+
+- loadDetailTvShow()
+-- Pindah ke page tv show
+-- Memberikan tindakan klik pada data pertama di rv_tvshow
+-- Memastikan text_title_tvshow dalam keadaan tampil
+-- Memastikan text_title_tvshow sesuai dengan data dummyTvShow[0].title
+-- Memastikan text_episode dalam keadaan tampil
+-- Memastikan text_episode sesuai dengan format Episodes : dummyTvShow[0].duration}"
+-- Memastikan btn_start_tvshow dalam keadaan tampil
+-- Memastikan btn_start_tvshow sesuai dengan data format "Watch Now!"
+-- Memastikan text_desc_tvshow dalam keadaan tampil
+-- Memastikan text_desc_tvshow sesuai dengan data format "Description Tv Show :"
+-- Memastikan text_description_tvshow dalam keadaan tampil
+-- Memastikan text_description_tvshow sesuai dengan data dummyTvShow[0].description
+-- Gulir kebagian bawah page
+-- Memastikan text_list_module_tvshow dalam keadaan tampil
+-- Memastikan text_list_module_tvshow sesuai dengan data format "List Tv Show :"
+
+- loadModuleTvShow()
+-- Pindah ke page tv show
+-- Memberikan tindakan klik pada data pertama di rv_movies
+-- Memastikan btn_start_tvshow dalam keadaan tampil
+-- Memastikan btn_start_tvshow sesuai dengan data format "Watch Now!"
+-- Memberikan tindakan klik pada data pertama di btn_start_tvshow
+-- Memastikan list module dalam keadaan tampil
+
+- loadDetailModuleTvShow()
+-- Pindah ke page tv show
+-- Memberikan tindakan klik pada data pertama di rv_tvshow
+-- Memastikan btn_start_tvshow dalam keadaan tampil
+-- Memastikan btn_start_tvshow sesuai dengan data format "Watch Now!"
+-- Memberikan tindakan klik pada data pertama di btn_start_tvshow
+-- Memberikan tindakan klik pada data pertama di rv_module
+-- Memastikan list module dalam keadaan webview telah tampil
+
+// Favorite
+- favoriteTvShow()
+-- memastikan tvShow dapat diklik
+-- memilih item ke 1 dari recyclerView
+-- memastikan botton fav dapat diklik (checked)
+-- kembali ke halaman sebelumnya
+-- memilih item ke 1 dari recyclerView
+-- memastikan botton fav dapat diklik (unchecked)
+- favoriteMovie()
+-- memastikan movies dapat diklik
+-- memilih item ke 1 dari recyclerView
+-- memastikan botton fav dapat diklik (checked)
+-- kembali ke halaman sebelumnya
+-- memilih item ke 1 dari recyclerView
+-- memastikan botton fav dapat diklik (unchecked)
+
+// Profile
+- loadProfile()
+-- Pindah ke page profile
+-- Memastikan img_watermark, username, nounique, fullname, company_img, company,
+location_img, location, repository_img, repository, follower_img, follower,
+follower_value, following_img, following, following_value telah tampil semua
+
+Unit Test
+
+MovieRepositoryTest
+- listMovies()
+-- memastikan data movies jumlahnya sesuai
+- listTvShow()
+-- memastikan data tvShow jumlahnya sesuai
+- favoritesMovies()
+-- memastikan movie tidak kosong
+-- memastikan jumlah movie sesuai
+- getFavoritesTvShow()
+-- memastikan tvShow tidak kosong
+-- memastikan jumlah tvShow sesuai
+- addRemoveFavoriteMovie()
+-- memastikan pada saat di add fav movie, val addedFavorite tidak kosong
+-- memastikan pada saat di remove fav movie, val removeFavorite tidak kosong
+- addRemoveFavoriteSeries()
+-- memastikan pada saat di add fav tvShow, val addedFavorite tidak kosong
+-- memastikan pada saat di remove fav tvShow, val removeFavorite tidak kosong
+
+DetailMovieViewModelTest
+- getMovies()
+-- memastikan movie tidak kosong
+-- memastikan movie Id cocok
+-- memastikan movie duration cocok
+-- memastikan movie description cocok
+-- memastikan movie image cocok
+-- memastikan movie title cocok
+- getDesc()
+-- meastikan desc movie tidak kosong
+-- memastikan jumlah desc movie 11 item
+- favorite()
+-- memastikan fungsi addFavorite dapat digunakan
+-- memastikan addFavorite tidak kosong
+-- memastikan fungsi removeFavorite dapat digunakan
+-- memastikan removeFavorite tidak kosong
+
+DetailTvShowViewModelTest
+- getTvShow()
+-- memastikan tvShow tidak kosong
+-- memastikan tvShow Id cocok
+-- memastikan tvShow episode cocok
+-- memastikan tvShow description cocok
+-- memastikan tvShow image cocok
+-- memastikan tvShow title cocok
+- getDesc()
+-- meastikan desctv Show tidak kosong
+-- memastikan jumlah desc tvShow 11 item
+- favorite()
+-- memastikan fungsi addFavorite dapat digunakan
+-- memastikan addFavorite tidak kosong
+-- memastikan fungsi removeFavorite dapat digunakan
+-- memastikan removeFavorite tidak kosong
+
+FavoriteViewModelTest
+- getMoviesFavorites()
+-- memastikan movie fav dapat dimasukan ke entities
+-- memastikan movie entities tidak kosong
+-- memastikan jumlah entities movie sebanyak 10 item
+- getTvShowFavorites()
+-- memastikan tvShow fav dapat dimasukan ke entities
+-- memastikan tvShow entities tidak kosong
+-- memastikan jumlah entities tvShow sebanyak 10 item
+
+MovieViewModelTest
+-getMovie()
+-- memastikan movie entities tidak kosong
+-- memastikan movie entities 10 item
+
+CourseReaderViewModelTest
+-getModules()
+-- memastikan module tidak kosong
+-- memastikan jumlah modul 11 item
+-getSelectedModule()
+-- memastikan module yang dipilih tidak kosong
+-- memtastikan contentEntity tidak kosong
+-- memastikan content tidak kosong
+-- memastikan content cocok
+
+TvshowViewModelTest
+-getTvShow()
+-- memastikan tvShow tidak kosong
+-- memastikan jumlah tvShow 10 item
