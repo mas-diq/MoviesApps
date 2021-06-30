@@ -14,8 +14,12 @@
 
 ## Project's Prototype
 <p align="center">
-  <img  width="220px" src="https://github.com/mas-diq/GithubUser/blob/master/Gif/1frame.gif" />
-  <img  width="220px" src="https://github.com/mas-diq/GithubUser/blob/master/Gif/2frame.gif" />
+  <img  width="220px" src="https://github.com/mas-diq/MoviesApps/blob/master/gif/frame1.gif" />
+  <img  width="220px" src="https://github.com/mas-diq/MoviesApps/blob/master/gif/frame2.gif" />
+  <img  width="220px" src="https://github.com/mas-diq/MoviesApps/blob/master/gif/frame3.gif" />
+  <img  width="220px" src="https://github.com/mas-diq/MoviesApps/blob/master/gif/frame4.gif" />
+  <img  width="220px" src="https://github.com/mas-diq/MoviesApps/blob/master/gif/frame5.gif" />
+  <img  width="220px" src="https://github.com/mas-diq/MoviesApps/blob/master/gif/frame6.gif" />
 </p>
 <br>
 
