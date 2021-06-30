@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <p align="center">
   <br>
-  <img  width="340px" src="https://github.com/mas-diq/MoviesApps/blob/master/movie.png" />
+  <img  width="280px" src="https://github.com/mas-diq/MoviesApps/blob/master/movie.png" />
   <h3 align="center">Movies Apps</h3>
   <p align="center">
   Movies App is an app that will show some movies from local database and display them in recyclerview. Plus, this application already uses unit and instrument tests to support the application checking process.
@@ -20,15 +20,18 @@
 <br>
 
 ## How to use ?
-<p align="left">
-  After you clone / fork this repository, make sure you have your own Token Github API. Then paste in build gradle module (apps) so you can access the API.
+<p align="left">udah ?
+  
+ You can directly download file 
+<a href="https://github.com/mas-diq/MoviesApps/blob/master/MoviesApps.apk"><strong>APK</strong></a> 
+  by click that link, and install on your smartphone
 </p>
 <br>
 
 ## MIT License
 <p align="left">
   Distributed under the MIT License
-<a href="https://github.com/mas-diq/MoviesAppss/blob/master/LICENSE"><strong>See License</strong></a> 
+<a href="https://github.com/mas-diq/MoviesApps/blob/master/LICENSE"><strong>See License</strong></a> 
   for more information
 </p>
 <br>
