@@ -20,8 +20,7 @@
 <br>
 
 ## How to use ?
-<p align="left">udah ?
-  
+<p align="left">
  You can directly download file 
 <a href="https://github.com/mas-diq/MoviesApps/blob/master/MoviesApps.apk"><strong>APK</strong></a> 
   by click that link, and install on your smartphone
